@@ -1,0 +1,55 @@
+@mixin placeholder($color: $c-text, $fontStyle: normal) {
+  &::-webkit-input-placeholder {
+    color: $color;
+    opacity: 0.9;
+    -webkit-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+    font-style: $fontStyle;
+  }
+  &::-moz-placeholder {
+    color: $color;
+    opacity: 0.9;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+    font-style: $fontStyle;
+  }
+  &:-moz-placeholder {
+    color: $color;
+    opacity: 0.9;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+    font-style: $fontStyle;
+  }
+  &:-ms-input-placeholder {
+    color: $color;
+    opacity: 0.9;
+    -ms-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+    font-style: $fontStyle;
+  }
+
+  &:focus::-webkit-input-placeholder {
+    color: $color;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+  }
+  &:focus::-moz-placeholder {
+    color: $color;
+    opacity: 0;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+  }
+  &:focus:-moz-placeholder {
+    color: $color;
+    opacity: 0;
+    -moz-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+  }
+  &:focus:-ms-input-placeholder {
+    color: $color;
+    opacity: 0;
+    -ms-transition: opacity 0.35s ease-in-out;
+    transition: opacity 0.35s ease-in-out;
+  }
+}

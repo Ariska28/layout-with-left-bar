@@ -1,0 +1,74 @@
+$c-white: #FFFFFF;
+$c-brand-light: #ECF5F5;
+$c-brand-pale: #CEECF0;
+
+$c-brand: #56CCF2;
+$c-brand-dark: #005FAF;
+
+$c-highlight: $c-brand-dark;
+$c-highlight-light: $c-brand;
+
+$c-gray: #707070;
+$c-gray-manatee: #979797;
+$c-gray-ash: #B0B7BF;
+$c-black: #000000;
+
+
+$c-text-black: $c-black;
+$c-text: #222222;
+$c-text-fade: rgba($c-black, 0.6);
+$c-border: #E2E2E5;
+$c-error: #EB5757;
+
+$font-family: 'Poppins', sans-serif;
+
+
+$fs-great: 56px;
+$fs-header: 48px;
+$fs-title: 36px;
+$fs-subtitle: 30px;
+
+$fs-header-md: 24px;
+$fs-title-md: 20px;
+$fs-subtitle-md: 18px;
+
+$fs-normal: 18px;
+$fs-md: 14px;
+$fs-sm: 12px;
+$fs-xsm: 11px;
+
+$grid-breakpoints: (
+        xs: 0,
+        xsm: 460px,
+        sm: 576px,
+        md: 768px,
+        lg: 992px,
+        xl: 1200px,
+        xxl: 1600px
+) !default;
+
+// This variable affects the `.h-*` and `.w-*` classes.
+$sizes: () !default;
+$sizes: map-merge((
+        25: 25%,
+        50: 50%,
+        75: 75%,
+        100: 100%,
+        auto: auto
+), $sizes);
+
+$spacer: 2rem !default;
+$spacers: () !default;
+$spacers: map-merge((
+        0: 0,
+        1: ($spacer * .25),
+        2: ($spacer * .5),
+        3: $spacer,
+        4: ($spacer * 1.5),
+        5: ($spacer * 3)
+), $spacers);
+
+$content-padding: 60px;
+$content-padding-sm: 20px;
+
+$header-height: 80px;

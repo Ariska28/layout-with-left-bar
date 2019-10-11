@@ -1,0 +1,114 @@
+// stylelint-disable declaration-no-important
+
+//
+// Text
+//
+
+.text-monospace {
+  font-family: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+// Alignment
+
+.text-justify  { text-align: justify !important; }
+.text-nowrap   { white-space: nowrap !important; }
+.text-truncate {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+// Responsive alignment
+
+@each $breakpoint in map-keys($grid-breakpoints) {
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    .text#{$infix}-left   { text-align: left !important; }
+    .text#{$infix}-right  { text-align: right !important; }
+    .text#{$infix}-center { text-align: center !important; }
+  }
+}
+
+// Transformation
+
+.text-lowercase  { text-transform: lowercase !important; }
+.text-uppercase  { text-transform: uppercase !important; }
+.text-capitalize { text-transform: capitalize !important; }
+
+// Weight and italics
+
+.font-weight-light  { font-weight: 300 !important; }
+.font-weight-normal { font-weight: 400 !important; }
+.font-weight-medium   { font-weight: 500 !important; }
+.font-weight-semibold   { font-weight: 600 !important; }
+.font-weight-bold   { font-weight: 700 !important; }
+.font-weight-extrabold   { font-weight: 800 !important; }
+.font-italic        { font-style: italic !important; }
+
+// Contextual colors
+
+.text-white { color: $c-white !important; }
+
+
+.text-body { color: $c-text !important; }
+.text-muted { color: rgba($c-text, 0.4) !important; }
+.text-brand { color: $c-brand !important; }
+.text-brand-light { color: $c-brand-light !important; }
+.text-brand-dark { color: $c-brand-dark !important; }
+
+.text-black-50 { color: rgba($c-black, .5) !important; }
+.text-white-50 { color: rgba($c-white, .5) !important; }
+
+// Misc
+
+.text-hide {
+  font: 0/0 a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+
+
+.font-size-md {
+  font-size: $fs-sm;
+  @include media-breakpoint-up(sm) {
+    font-size: $fs-md;
+  }
+}
+
+.font-size-normal {
+  font-size: $fs-md;
+  @include media-breakpoint-up(md) {
+    font-size: $fs-normal;
+  }
+}
+
+.font-size-title {
+  font-size: $fs-title-md;
+  @include media-breakpoint-up(md) {
+    font-size: $fs-title;
+  }
+}
+
+.font-size-subtitle {
+  font-size: $fs-subtitle-md;
+  @include media-breakpoint-up(md) {
+    font-size: $fs-subtitle;
+  }
+}
+
+.font-size-header {
+  font-size: $fs-header-md;
+  @include media-breakpoint-up(md) {
+    font-size: $fs-header;
+  }
+}
+
+.font-size-great {
+  font-size: $fs-header;
+  @include media-breakpoint-up(md) {
+    font-size: $fs-great;
+  }
+}
