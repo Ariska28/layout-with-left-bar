@@ -1,0 +1,239 @@
+@media screen and (min-width: 5500px)
+{ 
+	.gallery__block {
+    padding:  0;
+    border: thin solid #E2E2E5;
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 270px;
+    flex: 0 0 calc(6% - 40px);
+	}
+}
+
+@media screen and (min-width: 5000px) and (max-width: 5500px )
+{ 
+	.gallery__block {
+    padding:  0;
+    border: thin solid #E2E2E5;
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 270px;
+    flex: 0 0 calc(8% - 40px);
+	}
+}
+
+@media screen and (min-width: 4500px) and (max-width: 5000px )
+{ 
+	.gallery__block {
+    padding:  0;
+    border: thin solid #E2E2E5;
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 270px;
+
+	}
+}
+
+@media screen and (min-width: 4000px) and (max-width: 4500px )
+{ 
+	.gallery__block {
+    padding:  0;
+    border: thin solid #E2E2E5;
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 270px;
+    flex: 0 0 calc(10% - 40px);
+    background: red;
+	}
+}
+
+@media screen and (min-width: 3500px) and (max-width: 4000px )
+{ 
+	.gallery__block {
+    padding:  0;
+    border: thin solid #E2E2E5;
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 270px;
+    flex: 0 0 calc(11% - 40px);
+	}
+}
+
+@media screen and (min-width: 3000px) and (max-width: 3500px )
+{ 
+.gallery__block {
+    padding:  0;
+    border: thin solid #E2E2E5;
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 270px;
+    flex: 0 0 calc(12% - 40px);
+    
+}
+}
+
+@media screen and (min-width: 2500px) and (max-width: 3000px )
+{ 
+	.gallery__block {
+    padding:  0;
+    border: thin solid #E2E2E5;
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 270px;
+    flex: 0 0 calc(14% - 40px);
+    
+}
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px )
+{ 
+	.gallery__block {
+    padding:  0;
+    border: thin solid #E2E2E5;
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 270px;
+    flex: 0 0 calc(16% - 40px);
+   
+
+	}
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px )
+{ 
+	.gallery__block {
+    padding:  0;
+    border: thin solid #E2E2E5;
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 270px;
+    flex: 0 0 calc(20% - 40px);
+
+	}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1500px )
+{ 
+	.gallery__block {
+    padding:  0;
+    border: thin solid #E2E2E5;
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 270px;
+    flex: 0 0 calc(25% - 40px);
+
+	}
+}
+
+@media screen and (min-width:1000px) and (max-width:  1200px )
+{ 
+	.gallery__block {
+    padding:  0;
+    border: thin solid #E2E2E5;
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 270px;
+    flex: 0 0 calc(33% - 40px);
+
+	}
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px )
+{ 
+	.gallery__block {
+    padding:  0;
+    border: thin solid #E2E2E5;
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 270px;
+    flex: 0 0 calc(50% - 40px);
+	}
+}
+
+@media screen  and (max-width: 700px )
+{ 
+	.gallery__block {
+    padding:  0;
+    border: thin solid #E2E2E5;
+    border-radius: 5px ;
+    overflow: hidden;
+    margin: 20px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 270px;
+    flex: 0 0 calc(100% - 40px);
+	}
+}
+
+@media screen  and (min-width: 900px ) and (max-width: 1200px )
+{ 
+.subheader--reload {
+    width: 10%;
+}
+.subheader__menu--items {
+    width: 90%;
+    justify-content: center;
+}
+}

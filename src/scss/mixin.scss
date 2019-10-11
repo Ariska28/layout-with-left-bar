@@ -1,0 +1,23 @@
+@mixin svg($width: 30px, $height: 30px) {
+    width: $width;
+    height: $height;
+}
+
+@mixin flexes($flex, $column, $center, $space-between) {
+    display: $flex;
+    flex-direction: $column;
+    align-items: $center;
+    justify-content: $space-between;
+}
+
+@mixin click($hover, $active) {
+    &:hover {
+        background: $hover;
+        transition: 0.2s ease-in;
+    }
+
+    &:active {
+        background: $active;
+        transition: 0.2s ease-in;
+    }
+}
