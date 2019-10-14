@@ -29,10 +29,12 @@
     height: 75px;
     display: flex;
     align-items: center;
+    z-index: 6;
 }
 
 .header__logotype__link {
     display: flex;
+
 }
 /*.header {
     @include flexes(flex, row, stretch, center);

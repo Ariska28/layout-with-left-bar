@@ -129,13 +129,14 @@
     
     .main-menu {
         display: none;
-        position: absolute;
+        position: fixed;
         top:75px;
         height: 100%;
+        width: 20%;
     }
     .left-block {
         display: flex;
-        position: absolute;
+        position: fixed;
         width: 20%;
         flex-direction: column;	
         height: 75px;
@@ -159,9 +160,25 @@
     .left-block:hover .main-menu, .left-block  {
         display: flex;
         z-index: 7;
-        height: 90%;
+        height: 100%;   
+    }
 
-        
+    .header__main {
+        background: $color-green;
+        width: 100%;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        z-index: 6;
+        position: fixed;
+    }
+
+    .main__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        padding: 108px 120px 33px 33px;
+        width: 100%;
     }
 }
 
@@ -186,9 +203,10 @@
     .main-menu {
         display: none;
     }
+
     .left-block {
         display: flex;
-        position: absolute;
+        position: fixed;
         width: 30%;
         flex-direction: column;	
         height: 75px;
@@ -213,8 +231,18 @@
         margin-bottom: 20px;
         display: flex;
         z-index: 7;
-        height: 90%;
+        height: 100%;
         
+    }
+
+    .header__main {
+        background: $color-green;
+        width: 100%;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        z-index: 6;
+        position: fixed;
     }
 }
 
@@ -263,8 +291,18 @@
     .left-block:hover .main-menu, .left-block  {
         display: flex;
         z-index: 7;
-        height: 90%;
+        height: 100%;
         
+    }
+
+    .header__main {
+        background: $color-green;
+        width: 100%;
+        height: 75px;
+        display: flex;
+        align-items: center;
+        z-index: 6;
+        position: fixed;
     }
 }
 
