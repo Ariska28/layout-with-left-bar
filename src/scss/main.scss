@@ -1,33 +1,40 @@
 @import "var";
 @import "mixin";
 
-.main {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
+.display-block {
+	display:flex;
 }
 
-
-.main__menu {
+.right-block {
 	display: flex;
-	align-items: flex-start;
-	justify-content: flex-start;
-    z-index: 6;
-    height: 100%;
-    width: 20%;
-	
+	width: 80%;
+	flex-direction: column;
+}
+
+.left-block {
+	display: flex;
+	width: 20%;
+	flex-direction: column;	
 }
 
 .main__menu--navigation {
 	background:$color-light-gray;
-	position: sticky;
-	flex:0 0 230px;
 	border: thin solid #E2E2E5;
+	width: 100%;
 }
 
 .main__menu_border {
 	width: 100%;
 }
+
+.main-menu {
+	display: flex;
+	justify-content: flex-start;
+	z-index: 6;
+	height: 90%;
+	width: 100%;
+} 
+
 .main__menu__link {
 	display: flex;
 	width: 100%;
@@ -47,7 +54,7 @@
 	display: flex;
 	align-items: center;
 	padding: 10px 0;
-	border-bottom:1px solid rgba(183, 193, 203, 0.2);
+	border-top:1px solid rgba(183, 193, 203, 0.2);
 }
 .main__menu__sign-caption {
 	display: flex;
@@ -84,13 +91,19 @@
 	width: 10px;
 	height: 10px;
 }
+
+
+
 /*---------GALLARY-------------------*/
 
 .main__gallery {
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:flex-start;
+	padding: 33px 120px 33px 33px;
+	width: 100%;
 }
+
 
 .gallery__block-img {
 	position: relative;

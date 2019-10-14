@@ -1,32 +1,58 @@
 @import "var";
 @import "mixin";
 
-.header {
-    @include flexes(flex, row, stretch, center);
+
+.header-left {
     height: 75px;
+    display: flex;
+    align-items: center;
+    background: $color-gray;
 }
 
 .header__logotype {
     @include flexes(flex, row, center, flex-start);
+    z-index: 11;
 }
 
 .header__smile__img {
     @include svg(40px, 40px);
+    margin-left: 15px;
 }
 
 .header__caption__img {
     @include svg(150px, 40px);
 }
 
-.header__logotype {
-    flex:0 0 230px;
-    background: $color-gray;
+.header__main {
+	background: $color-green;
+    width: 100%;
+    height: 75px;
     display: flex;
-    align-content: center;
-    justify-content: center;
+    align-items: center;
 }
 
-.header__main {
-    background: $color-green;
-    width: 100%;
+.header__logotype__link {
+    display: flex;
 }
+/*.header {
+    @include flexes(flex, row, stretch, center);
+    height: 75px;
+}
+
+.header__logotype {
+    @include flexes(flex, row, center, flex-start);
+    z-index: 11;
+}
+
+
+
+.header__logotype {
+	background: $color-gray;
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	width: 10%;
+}
+
+
+*/

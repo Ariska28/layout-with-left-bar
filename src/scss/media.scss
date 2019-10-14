@@ -1,90 +1,45 @@
 @media screen and (min-width: 5500px)
 { 
 	.gallery__block {
-    padding:  0;
-    border: thin solid #E2E2E5;
-    border-radius: 5px ;
-    overflow: hidden;
-    margin: 20px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: 270px;
-    flex: 0 0 calc(6% - 40px);
-	}
+        padding:  0;
+        border: thin solid #E2E2E5;
+        border-radius: 5px ;
+        overflow: hidden;
+        margin: 20px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 270px;
+        flex: 0 0 calc(6% - 40px);
+    }
+    
+   
+
 }
 
-@media screen and (min-width: 5000px) and (max-width: 5500px )
+@media screen and (min-width: 4000px) and (max-width: 5500px)
 { 
 	.gallery__block {
-    padding:  0;
-    border: thin solid #E2E2E5;
-    border-radius: 5px ;
-    overflow: hidden;
-    margin: 20px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: 270px;
-    flex: 0 0 calc(8% - 40px);
-	}
+        padding:  0;
+        border: thin solid #E2E2E5;
+        border-radius: 5px ;
+        overflow: hidden;
+        margin: 20px;
+        background: #fff;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        min-height: 270px;
+        flex: 0 0 calc(8% - 40px);
+        
+    }
+    
+
 }
 
-@media screen and (min-width: 4500px) and (max-width: 5000px )
-{ 
-	.gallery__block {
-    padding:  0;
-    border: thin solid #E2E2E5;
-    border-radius: 5px ;
-    overflow: hidden;
-    margin: 20px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: 270px;
 
-	}
-}
-
-@media screen and (min-width: 4000px) and (max-width: 4500px )
-{ 
-	.gallery__block {
-    padding:  0;
-    border: thin solid #E2E2E5;
-    border-radius: 5px ;
-    overflow: hidden;
-    margin: 20px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: 270px;
-    flex: 0 0 calc(10% - 40px);
-    background: red;
-	}
-}
-
-@media screen and (min-width: 3500px) and (max-width: 4000px )
-{ 
-	.gallery__block {
-    padding:  0;
-    border: thin solid #E2E2E5;
-    border-radius: 5px ;
-    overflow: hidden;
-    margin: 20px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: 270px;
-    flex: 0 0 calc(11% - 40px);
-	}
-}
-
-@media screen and (min-width: 3000px) and (max-width: 3500px )
+@media screen and (min-width: 3000px) and (max-width: 4000px )
 { 
 .gallery__block {
     padding:  0;
@@ -97,9 +52,9 @@
     flex-direction: column;
     position: relative;
     min-height: 270px;
-    flex: 0 0 calc(12% - 40px);
-    
+    flex: 0 0 calc(10% - 40px); 
 }
+
 }
 
 @media screen and (min-width: 2500px) and (max-width: 3000px )
@@ -116,6 +71,7 @@
     position: relative;
     min-height: 270px;
     flex: 0 0 calc(14% - 40px);
+    
     
 }
 }
@@ -134,7 +90,6 @@
     position: relative;
     min-height: 270px;
     flex: 0 0 calc(16% - 40px);
-   
 
 	}
 }
@@ -153,11 +108,10 @@
     position: relative;
     min-height: 270px;
     flex: 0 0 calc(20% - 40px);
-
 	}
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1500px )
+@media screen and (min-width: 1000px) and (max-width: 1500px )
 { 
 	.gallery__block {
     padding:  0;
@@ -171,27 +125,47 @@
     position: relative;
     min-height: 270px;
     flex: 0 0 calc(25% - 40px);
+    }
+    
+    .main-menu {
+        display: none;
+        position: absolute;
+        top:75px;
+        height: 100%;
+    }
+    .left-block {
+        display: flex;
+        position: absolute;
+        width: 20%;
+        flex-direction: column;	
+        height: 75px;
+    }
 
-	}
+    .right-block {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        padding: 33px;
+        width: 100%;
+    }
+    
+
+    .left-block:hover .main-menu, .left-block  {
+        display: flex;
+        z-index: 7;
+        height: 90%;
+
+        
+    }
 }
 
-@media screen and (min-width:1000px) and (max-width:  1200px )
-{ 
-	.gallery__block {
-    padding:  0;
-    border: thin solid #E2E2E5;
-    border-radius: 5px ;
-    overflow: hidden;
-    margin: 20px;
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    min-height: 270px;
-    flex: 0 0 calc(33% - 40px);
 
-	}
-}
 
 @media screen and (min-width: 700px) and (max-width: 1000px )
 { 
@@ -207,7 +181,41 @@
     position: relative;
     min-height: 270px;
     flex: 0 0 calc(50% - 40px);
-	}
+    }
+    
+    .main-menu {
+        display: none;
+    }
+    .left-block {
+        display: flex;
+        position: absolute;
+        width: 30%;
+        flex-direction: column;	
+        height: 75px;
+    }
+
+    .right-block {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        padding: 33px;
+        width: 100%;
+    }
+    
+
+    .left-block:hover .main-menu, .left-block  {
+        margin-bottom: 20px;
+        display: flex;
+        z-index: 7;
+        height: 90%;
+        
+    }
 }
 
 @media screen  and (max-width: 700px )
@@ -224,7 +232,40 @@
     position: relative;
     min-height: 270px;
     flex: 0 0 calc(100% - 40px);
-	}
+    }
+    
+    .main-menu {
+        display: none;
+    }
+    .left-block {
+        display: flex;
+        position: absolute;
+        width: 30%;
+        flex-direction: column;	
+        height: 75px;
+    }
+
+    .right-block {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main__gallery {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:flex-start;
+        padding: 33px;
+        width: 100%;
+    }
+    
+
+    .left-block:hover .main-menu, .left-block  {
+        display: flex;
+        z-index: 7;
+        height: 90%;
+        
+    }
 }
 
 @media screen  and (min-width: 900px ) and (max-width: 1200px )
@@ -237,3 +278,5 @@
     justify-content: center;
 }
 }
+
+
