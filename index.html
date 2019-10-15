@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <title>Progect</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
 </head>
 
 <body>
@@ -24,14 +26,17 @@
                 <svg class="header__logotype__caption__img">
                     <use xlink:href="#caption"></use>
                 </svg>                    
-            </a>       
+            </a>
+            
+            <button id="Click" class="Click-js">
+            </button>
         </div> 
     </div>
 
 
     <main>
         <div class="main">
-            <div class="main__menu">
+            <div class="main__menu main__menu_disable">
                     <nav class="main__menu--navigation">
                         <ul class="main__menu--content">
                             <li class="main__menu__item">
@@ -180,6 +185,7 @@
                         </ul>
                     </nav>
                 </div>
+
             <div class="gallery">
                 <div class="gallery__block">
                     <div class="gallery__block-img">
