@@ -9,15 +9,3 @@
     align-items: $center;
     justify-content: $space-between;
 }
-
-@mixin click($hover, $active) {
-    &:hover {
-        background: $hover;
-        transition: 0.2s ease-in;
-    }
-
-    &:active {
-        background: $active;
-        transition: 0.2s ease-in;
-    }
-}
