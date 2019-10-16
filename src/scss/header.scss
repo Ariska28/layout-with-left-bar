@@ -8,11 +8,18 @@
     display: flex;
     align-items: center;
     z-index: 6;
+    position: fixed;
+    justify-content: space-between;
 
+    
 
     &__logotype {
         @include flexes(flex, row, center, flex-start);
         z-index: 11;
+        height: 77px;
+        width: 20%;
+        background: none;
+        
 
         &__smile__img {
             @include svg(40px, 40px);
@@ -22,5 +29,12 @@
         &__caption__img {
             @include svg(150px, 40px);
         }
+        
+    }
+
+    &__logotype_color {
+        background: $color-light-gray;
+        
     }
 }
+

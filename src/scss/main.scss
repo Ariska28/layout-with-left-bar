@@ -8,32 +8,52 @@
 }
 
 .Click-js {
-	background:red;
-	height: 20px;
-	width: 20px;
+	background:#FF8300;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	border: 1px solid #fff;
+	font-family: Nunito,sans-serif;
+	font-weight: 600;
+    font-size: 13px;
+    line-height: 13px;
 	z-index: 13;
+	margin-right: 60px;
+	display: none;
 }
-
 
 
 .main__menu {
 	z-index: 6;
 	width: 20%;
 	position: relative;
-	top:-75px;
 	display: flex;
 	align-self: stretch;
 	opacity: 0;
 
-&_disable {
-	opacity: 1;
-}
+	&main__menu--content {
+		height: 100%;
+	}
+
+	&_Partnet {
+		@include svg(120px,20px);
+	}
+
+	&_disable {
+		opacity: 1;
+	}
+
 
 	&--navigation {
 		background:$color-light-gray;
 		border: thin solid #E2E2E5;
-		width: 100%;
-		padding-top: 75px;
+		width: 20%;
+		height: 100%;
+		position: fixed;
+		top: 75px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
 	}
 
 	&_border {
@@ -98,7 +118,7 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content:flex-start;
-	padding: 33px 120px 33px 33px;
+	padding: 108px 120px 33px 33px;
 	width: 100%;
 
 	&__img  {
@@ -109,6 +129,16 @@
 
 	&__block {
 		position: relative;
+		overflow: hidden;
+		padding:  0;
+		border: thin solid #E2E2E5;
+		border-radius: 5px ;
+		margin: 20px;
+		background: #fff;
+		display: flex;
+		flex-direction: column;
+		min-height: 270px;
+
 		&-img {
 			position: relative;
 			overflow: hidden;
@@ -123,6 +153,7 @@
 
 		&-img-link {
 			height: 170px;
+			
 		}
 
 		&-caption {
