@@ -108,6 +108,7 @@
 
 
 	&__block {
+		position: relative;
 		&-img {
 			position: relative;
 			overflow: hidden;
@@ -186,7 +187,7 @@
 			border: 2px solid #FFFFFF;
 			position: absolute;
 			right: 10%;
-			top: -40%;
+			top: 145px;
 			height: 45px;
 			width: 45px;
 			z-index: 3;
