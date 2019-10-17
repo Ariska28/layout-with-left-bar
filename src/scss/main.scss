@@ -90,7 +90,7 @@
 		color: #3E3934;
 	}
 
-	&__link:hover .main__menu_invisible{
+	&__link:hover .main__menu-invisible{
 		color:  #FF8300;
 	} 
 
@@ -429,23 +429,15 @@
 @media screen  and (max-width: 500px )
 { 
     .main {
-        justify-content: center;
-        width: 100%;
-        flex-direction: column;
-    
+
 		&__menu {
-			position: static;
-			width: 100%;
+			position: absolute;
 			height: 100%;
-			align-self: stretch;
 
 			&__navigation {
 				border: none;
 				width: 100%;
-				align-self: stretch;
-				padding-top: 0px;
-				position: static;
-				display: block;
+				position: fixed;
 				height: 100%;
 			}
 			
@@ -462,9 +454,7 @@
         padding:  33px;
     }
     .Click-js {
-        display: none;
+        display: block;
 	}
-	.main__menu-disable {
-		opacity: 1;
-	}
+
 }
