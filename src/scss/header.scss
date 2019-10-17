@@ -20,18 +20,18 @@
         
         
 
-        &--smile-img {
+        &-img1 {
             @include svg(40px, 40px);
             margin-left: 15px;
         }
 
-        &--caption-img {
+        &-img2 {
             @include svg(150px, 40px);
         }
         
     }
 
-    &__logotype-color {
+    &__logotype--color {
         background:  $color-light-gray;
     }
 }
