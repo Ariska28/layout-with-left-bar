@@ -11,7 +11,7 @@
 
     
 
-    &__logotype {
+    &-logotype {
         @include flexes(flex, row, center, flex-start);
         z-index: 11;
         height: 77px;
@@ -31,17 +31,17 @@
         
     }
 
-    &__logotype--color {
+    &-logotype--color {
         background:  $color-light-gray;
     }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1300px )
 { 
-    .header__logotype {
+    .header-logotype {
         width: 30%;
     }
-    .header__logotype--color {
+    .header-logotype--color {
         background: none;
     }
 
@@ -49,20 +49,20 @@
 
 @media screen and (min-width: 700px) and (max-width: 1000px )
 { 
-    .header__logotype {
+    .header-logotype {
         width: 30%;
     }
-    .header__logotype--color {
+    .header-logotype--color {
         background: none;
     }	
 }
 
 @media screen  and (max-width: 700px ) and (min-width: 500px )
 { 
-    .header__logotype {
+    .header-logotype {
         width: 40%;
     } 
-    .header__logotype--color {
+    .header-logotype--color {
         background: none;
     } 
 }
@@ -71,7 +71,7 @@
 { 
     .header {
         width: 100%;
-        &__logotype {
+        &-logotype {
             background: none;
             width:10%;     
             &-color {
