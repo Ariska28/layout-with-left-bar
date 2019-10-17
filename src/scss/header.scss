@@ -1,5 +1,3 @@
-@import "var";
-@import "mixin";
 
 .header {
 	background: $color-green;
@@ -18,23 +16,71 @@
         z-index: 11;
         height: 77px;
         width: 20%;
-        background: none;
+        background: $color-light-gray;
+        
         
 
-        &__smile__img {
+        &--smile-img {
             @include svg(40px, 40px);
             margin-left: 15px;
         }
 
-        &__caption__img {
+        &--caption-img {
             @include svg(150px, 40px);
         }
         
     }
 
-    &__logotype_color {
-        background: $color-light-gray;
-        
+    &__logotype-color {
+        background:  $color-light-gray;
+    }
+}
+
+@media screen and (min-width: 1000px) and (max-width: 1300px )
+{ 
+    .header__logotype {
+        width: 30%;
+    }
+    .header__logotype-color {
+        background: none;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px )
+{ 
+    .header__logotype {
+        width: 30%;
+    }
+    .header__logotype-color {
+        background: none;
+    }	
+}
+
+@media screen  and (max-width: 700px ) and (min-width: 500px )
+{ 
+    .header__logotype {
+        width: 40%;
+    } 
+    .header__logotype-color {
+        background: none;
+    } 
+}
+
+@media screen  and (max-width: 500px )
+{ 
+    .header {
+        width: 100%;
+        position: static;
+        &__logotype {
+            width:10%;     
+            &-color {
+                background: none;
+            }
+            &--caption {
+                display: none;
+            }  
+        }
     }
 }
 

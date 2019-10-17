@@ -1,11 +1,3 @@
-@import "var";
-@import "mixin";
-
-
-.main {
-	display: flex;
-	position: relative;
-}
 
 .Click-js {
 	background:#FF8300;
@@ -22,6 +14,10 @@
 	display: none;
 }
 
+.main {
+	display: flex;
+	position: relative;
+}
 
 .main__menu {
 	z-index: 6;
@@ -29,22 +25,28 @@
 	position: relative;
 	display: flex;
 	align-self: stretch;
-	opacity: 0;
+	opacity: 1;
 
-	&main__menu--content {
+	&__content {
 		height: 100%;
+		margin-bottom: 50px;
 	}
 
-	&_Partnet {
+	&--Partnet {
 		@include svg(120px,20px);
 	}
 
-	&_disable {
-		opacity: 1;
+	&-disable {
+		opacity: 0;
+	}
+
+	&__Partner {
+		margin-bottom: 90px;
+		margin-left: 30px;
 	}
 
 
-	&--navigation {
+	&__navigation {
 		background:$color-light-gray;
 		border: thin solid #E2E2E5;
 		width: 20%;
@@ -54,9 +56,10 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		overflow: auto;
 	}
 
-	&_border {
+	&__border {
 		width: 100%;
 	}
 
@@ -70,7 +73,7 @@
 		fill: #3E3934;
 	}
 
-	&_conteiner {
+	&__conteiner {
 		@include flexes(flex,row, center,flex-start);
 		padding: 10px 0;
 		border-top:1px solid rgba(183, 193, 203, 0.2);
@@ -80,7 +83,7 @@
 		width: 89%;
 	}
 
-	&_invisible {
+	&-invisible {
 		font-weight: 600;
 		font-size: 13px;
 		line-height: 27px;
@@ -139,7 +142,7 @@
 		flex-direction: column;
 		min-height: 270px;
 
-		&-img {
+		&__img {
 			position: relative;
 			overflow: hidden;
 		}
@@ -151,12 +154,12 @@
 			object-fit: cover;
 		}
 
-		&-img-link {
+		&__img--link {
 			height: 170px;
 			
 		}
 
-		&-caption {
+		&__caption {
 			margin-top:4px;
 			width: 100%; 
 			padding-top: 10px;
@@ -173,10 +176,9 @@
 				line-height: 18px;
 				margin: 0;
 				padding: 5px 0;
-
 			}
 
-			&--name--h4 {
+			&--h4 {
 				font-style: normal;
 				font-weight: bold;
 				font-size: 18px;
@@ -184,11 +186,10 @@
 				color: #000000;
 				margin: 6px 0 2px 0 ;
 				margin-right: 5px;
-
 			}
 		}
 
-		&-time {
+		&__time {
 			top:86%;
 			font-weight: 600;
 			font-size: 12px;
@@ -201,17 +202,15 @@
 			width: 100%;
 		}
 
-		&-img--suitcase{
+		&--suitcase{
 			position: relative;
 			top: 3px;
 			padding-right: 5px;
-			height: 15px;
-			width: 23px;
+			@include svg(23px,15px);
 		}
 
 
-		&-img--ellipse{
-
+		&__ellipse{
 			content: '';
 			border-radius: 50px;
 			background: #FF8300;
@@ -222,28 +221,250 @@
 			height: 45px;
 			width: 45px;
 			z-index: 3;
-
 		}
 
-		&-img--goblets {
+		&--goblets {
 			@include svg(40px, 40px);
 			text-align: center;
 
 
 		}
 
-		&-img--picture {
+		&--picture {
 			@include svg(40px, 40px);
 			text-align: center;
 
 		}
 
-		&-img--cubock {
+		&--cubock {
 			@include svg(40px, 40px);
 		}
 
-		&-img--ball {
+		&--ball {
 			@include svg(40px, 40px);
 		}
+	}
+}
+/*-------------------media--------------------------------------*/
+@media screen and (min-width: 5500px)
+{ 
+    .gallery {
+        width: 80%;
+    
+		&__block {
+			flex: 0 0 calc(7% - 40px);
+		}
+	}
+	.main__menu {
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 4000px) and (max-width: 5500px)
+{ 
+    .gallery {
+        width: 80%;
+    
+
+		&__block {
+			flex: 0 0 calc(8% - 40px);   
+		}
+	}
+	.main__menu {
+		opacity: 1;
+	}
+}
+
+
+@media screen and (min-width: 3000px) and (max-width: 4000px )
+{ 
+    .gallery {
+        width: 80%;
+    
+
+		&__block {
+			flex: 0 0 calc(10% - 40px); 
+		}
+	}
+	.main__menu {
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 2500px) and (max-width: 3000px )
+{ 
+    .gallery {
+        width: 80%;
+    
+		&__block {
+			flex: 0 0 calc(14% - 40px);   
+		}
+	}
+	.main__menu {
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 2000px) and (max-width: 2500px )
+{ 
+    .gallery {
+        width: 80%;
+    
+		&__block {
+			flex: 0 0 calc(16% - 40px);
+		}
+	}
+	.main__menu {
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 1500px) and (max-width: 2000px )
+{ 
+    .gallery {
+        width: 80%;
+    
+		&__block {
+			flex: 0 0 calc(20% - 40px);
+		}
+	}
+	.main__menu {
+		opacity: 1;
+	}
+}
+
+@media screen and (min-width: 1300px) and (max-width: 1500px )
+{ 
+    .gallery {
+        width: 80%;
+    
+		&__block {
+			flex: 0 0 calc(25% - 40px);
+		}
+	}
+	.main__menu {
+		opacity: 1;
+	}
+}
+
+
+@media screen and (min-width: 1000px) and (max-width: 1300px )
+{ 
+	.gallery {
+        padding: 108px 33px 33px 33px;	
+
+		&__block {
+			flex: 0 0 calc(25% - 40px);
+		}
+	}
+
+    .main__menu {
+        height: 100%;
+        position: absolute;  
+
+		&__navigation {
+			position: fixed;
+			width: 30%;
+		}
+	}
+
+    .Click-js {
+        display: block;
+    }
+
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px )
+{ 
+	.gallery {
+        padding: 108px 33px 33px 33px;	
+	
+		&__block {
+			flex: 0 0 calc(36% - 66px);
+		}
+	}
+    
+    .main__menu {
+        height: 100%;
+        position: fixed;   
+
+		&__navigation {
+			width: 30%;
+			position: fixed;
+		}
+	}
+
+    .Click-js {
+        display: block;
+    }
+
+}
+@media screen  and (max-width: 700px ) and (min-width: 500px )
+{ 
+	.gallery {
+        padding: 108px 33px 33px 33px;
+    
+		&__block {
+			flex: 0 0 calc(48% - 33px);
+		}
+	}
+
+    .main__menu {
+        height: 100%;
+		position: absolute;
+		
+		&__navigation {
+			width: 40%;
+			height: 100%;
+			position: fixed;
+			top:75px;
+		} 
+	}   
+    .Click-js {
+        display: block;
+    }
+}
+
+
+@media screen  and (max-width: 500px )
+{ 
+    .main {
+        justify-content: center;
+        width: 100%;
+        flex-direction: column;
+    
+		&__menu {
+			position: static;
+			width: 100%;
+			height: 100%;
+			align-self: stretch;
+
+			&__navigation {
+				border: none;
+				width: 100%;
+				align-self: stretch;
+				padding-top: 0px;
+				position: static;
+				display: block;
+				height: 100%;
+			}
+			
+			&__Partner_block {
+				margin-bottom: 20px;
+				margin-left: 30px;
+			}
+		}
+	}
+
+    .gallery {
+        display: block;
+        background: #fff;
+        padding:  33px;
+    }
+    .Click-js {
+        display: none;
+	}
+	.main__menu-disable {
+		opacity: 1;
 	}
 }
