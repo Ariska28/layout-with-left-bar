@@ -15,7 +15,7 @@
   "homepage": "https://bitbucket.org/ibrahimrahmani/asamt-landing#readme",
   "dependencies": {
     "del": "^3.0.0",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-autoprefixer": "^5.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-minifier": "^1.2.2",
